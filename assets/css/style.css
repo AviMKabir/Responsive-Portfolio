@@ -50,6 +50,20 @@ html {
     color: #4aaaa5;
   }
 
+  .logo { 
+  
+
+    /* I stuck this inside the navbar div so I can float it left */
+  
+    float: left;
+    color: white;
+    background-color: #4aaaa5;
+    padding: 38px;
+    z-index: 101;
+    
+    
+    
+  }
 
 .navbar {
 
@@ -60,20 +74,7 @@ html {
 }
 
 
-.logo { 
-  
 
-  /* I stuck this inside the navbar div so I can float it left */
-
-  float: left;
-  color: white;
-  background-color: #4aaaa5;
-  padding: 38px;
-  z-index: 101;
-  
-  
-  
-}
 
 /* stuff for the nav list */
 
@@ -124,6 +125,7 @@ nav li {
     background-color: rgb(255, 255, 255);
     border-bottom: 3px solid #cccccc;
     position: fixed;
+    top: 0px;
     width: 100%;
     
     z-index: 100;
@@ -146,8 +148,8 @@ nav li {
     
     clear: both;
     margin: 0 auto;
-    
     width: fit-content;
+    max-width: 98%;
     min-height: 100%;
     
   
@@ -162,13 +164,14 @@ nav li {
     margin-top: 120px;
     margin-bottom: 15px;
     border: solid 1px #dddddd;
-    min-width: 920px;
+    max-width: 920px;
     position: relative;
     
 
   }
 
-  
+
+
 
 
 
@@ -195,24 +198,44 @@ nav li {
 
     margin-top: 10px;
   }
+  
 
 
   /* the portfolio page */
   
-  #portfolio-image
 
-  {
 
-    margin-top: 14px;
-    width: 200px;
+
+.container-port{
+    
+  clear: both;
+  margin: 0 auto;
+  max-width: 960px;
+  min-height: 100%;
+  
+
 }
 
+#main-port
+ {
+
+  
+  background-color: white;
+  padding: 10px 20px;
+  margin-top: 120px;
+  margin-bottom: 15px;
+  border: solid 1px #dddddd;
+  position: relative;
+  
+
+}
 
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
+
 
 .column {
   flex: 25%;
@@ -226,91 +249,7 @@ nav li {
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 33%;
-    max-width: 33%;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-  /* pairing the portfolio pictures so they are inline  */
-  /* I am trying to make a carbon copy of the homework images I know how to make a table too I swear */
-  .portfolio-1,
-  .portfolio-2,
-  .portfolio-3,
-  .portfolio-4,
-  .portfolio-5  {
-
-    position: relative;
-    
-  
-    
-    
-  }
-
-  .portfolio-1-text
-   {
-
-  position: absolute;
-  bottom: 15px;
-  left: 0px;
-  color: white;
-  background-color: #4aaaa5;
-  padding: 10px 61px;
-   }
-
-  .portfolio-2-text {
-
-    position: absolute;
-    bottom: 15px;
-    left: 0px;
-    color: white;
-    background-color: #4aaaa5;
-    padding: 10px 53.5px;
-    
-  }
-
-
-  .portfolio-3-text {
-    
-    clear: both;
-    position: absolute;
-    bottom: 15px;
-    left: 0px;
-    color: white;
-    background-color: #4aaaa5;
-    padding: 10px 51.5px;
-  }
-
-  .portfolio-4-text {
-    
-    clear: both;
-    position: absolute;
-    bottom: 15px;
-    left: 0px;
-    color: white;
-    background-color: #4aaaa5;
-    padding: 10px 20.5px;
-  }
-
-
-  .portfolio-5-text {
-    
-    clear: both;
-    position: absolute;
-    bottom: 15px;
-    left: 0px;
-    color: white;
-    background-color: #4aaaa5;
-    padding: 10px 16.5px;
-  }
 
 
   /* this is the contact page */
@@ -338,6 +277,8 @@ nav li {
     background-color: #75c5c1;
   }
 
+  
+
 
   /* this is the footer */
 
@@ -357,3 +298,100 @@ nav li {
   font-size: 10px;
   border-top: 5px solid #4aaaa5;
  }
+
+ /* this is media sizing stuff */
+
+ @media screen and (max-width: 980px) {
+  .column {
+    flex: 25%;
+    max-width: 25%;
+  }
+
+  .container{
+    
+    clear: both;
+    margin: 0 auto;
+    width: fit-content;
+    min-height: 100%;
+    
+  
+  }
+
+ 
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 40%;
+    max-width: 40%;
+  }
+
+  .container{
+    
+    clear: both;
+    margin: 0 auto;
+    max-width: 98%;
+    min-height: 100%;
+    
+  
+  }
+
+  #bio-image
+  {
+
+    margin-right: 20px;
+    margin-top: 14px;
+    width: 300px;
+  
+}
+
+.navbar {
+
+  /* inside of the header making sure the z-index is high so it covers everything  */
+ margin: 0 auto;
+ z-index: 100;
+ width: 100%;
+}
+
+
+}
+@media screen and (max-width: 640px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  #bio-image
+  {
+
+    margin-right: 20px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+  
+}
+
+header {
+
+  
+  background-color: rgb(255, 255, 255);
+  border-bottom: 3px solid #cccccc;
+  position: static;
+  top: 0px;
+  width: 100%;
+  
+  z-index: 100;
+  
+  
+  
+}
+
+
+
+
+
+
+}
