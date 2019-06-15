@@ -221,7 +221,32 @@ nav li {
   max-width: 960px;
   min-height: 100%;
   
+  
+  
+  
 
+}
+
+.pic1withtext {
+
+  position: relative;
+  text-align: center;
+  
+  
+}
+
+.pic1text {
+
+  position: absolute;
+  top: 80%;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  color: white;
+  
+  
+  
+  
 }
 
 #main-port
@@ -467,6 +492,18 @@ header {
 .container {
 
   margin-top: -100px;
+  margin-left: 15px;
+  margin-right: 16px;
+
+}
+
+
+.container-port {
+
+  margin-top: -100px;
+  margin-left: 15px;
+  margin-right: 16px;
+
 }
 
 }
