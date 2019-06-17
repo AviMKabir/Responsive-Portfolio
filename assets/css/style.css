@@ -227,23 +227,32 @@ nav li {
 
 }
 
-.pic1withtext {
+.pic1withtext,
+.pic2withtext,
+.pic3withtext,
+.pic4withtext,
+.pic5withtext {
 
   position: relative;
-  text-align: center;
+  
   
   
 }
 
-.pic1text {
+.pic1text,
+.pic2text,
+.pic3text,
+.pic4text,
+.pic5text {
 
   position: absolute;
-  top: 80%;
-  bottom: 20%;
+  text-align: center;
+  top:60%;
   left: 0;
   right: 0;
   color: white;
-  
+  background-color: #4aaaa5;
+  padding: 10px 20px;
   
   
   
